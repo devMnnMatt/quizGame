@@ -1,0 +1,252 @@
+[
+    {
+        "domanda": "Qual è l'oceano più grande del mondo?",
+        "opzioni": ["Atlantico", "Indiano", "Pacifico", "Artico"],
+        "corretta": "Pacifico"
+    },
+    {
+        "domanda": "Chi ha scritto 'La Divina Commedia'?",
+        "opzioni": ["Petrarca", "Manzoni", "Dante Alighieri", "Giovanni Boccaccio"],
+        "corretta": "Dante Alighieri"
+    },
+    {
+        "domanda": "Chi ha dipinto la Gioconda?",
+        "opzioni": ["Michelangelo", "Leonardo da Vinci", "Raffaello", "Caravaggio"],
+        "corretta": "Leonardo da Vinci"
+    },
+    {
+        "domanda": "Quanti continenti ci sono sulla Terra?",
+        "opzioni": ["8", "7", "5", "6"],
+        "corretta": "7"
+    },
+    {
+        "domanda": "Qual è la capitale della Francia?",
+        "opzioni": ["Marsiglia", "Parigi", "Lione", "Tolosa"],
+        "corretta": "Parigi"
+    },
+    {
+        "domanda": "In che anno è finita la Seconda Guerra Mondiale?",
+        "opzioni": ["1939", "1942", "1950", "1945"],
+        "corretta": "1945"
+    },
+    {
+        "domanda": "Qual è il pianeta più vicino al Sole?",
+        "opzioni": ["Venere", "Mercurio", "Terra", "Marte"],
+        "corretta": "Mercurio"
+    },
+    {
+        "domanda": "Chi ha dipinto 'La notte stellata'?",
+        "opzioni": ["Monet", "Van Gogh", "Picasso", "Munch"],
+        "corretta": "Van Gogh"
+    },
+    {
+        "domanda": "Chi ha scritto 'Il Principe'?",
+        "opzioni": ["Dante", "Galileo", "Leopardi", "Niccolò Machiavelli"],
+        "corretta": "Niccolò Machiavelli"
+    },
+    {
+        "domanda": "Qual è la moneta ufficiale del Giappone?",
+        "opzioni": ["Euro", "Yen", "Won", "Dollaro"],
+        "corretta": "Yen"
+    },
+    {
+        "domanda": "Qual è il simbolo chimico dell’oro?",
+        "opzioni": ["Ag", "Fe", "Au", "Pb"],
+        "corretta": "Au"
+    },
+    {
+        "domanda": "In che continente si trova il deserto del Sahara?",
+        "opzioni": ["Asia", "America", "Australia", "Africa"],
+        "corretta": "Africa"
+    },
+    {
+        "domanda": "Chi ha inventato il telefono?",
+        "opzioni": ["Edison", "Marconi", "Alexander Graham Bell", "Tesla"],
+        "corretta": "Alexander Graham Bell"
+    },
+    {
+        "domanda": "Dove si trovano le piramidi di Giza?",
+        "opzioni": ["Marocco", "Egitto", "Messico", "Perù"],
+        "corretta": "Egitto"
+    },
+    {
+        "domanda": "In che stato si trova la città di New York?",
+        "opzioni": ["California", "Stato di New York", "Texas", "Florida"],
+        "corretta": "Stato di New York"
+    },
+    {
+        "domanda": "Qual è la montagna più alta del mondo?",
+        "opzioni": ["K2", "Everest", "Kilimangiaro", "Alpi"],
+        "corretta": "Everest"
+    },
+    {
+        "domanda": "Che lingua si parla in Brasile?",
+        "opzioni": ["Spagnolo", "Portoghese", "Inglese", "Francese"],
+        "corretta": "Portoghese"
+    },
+    {
+        "domanda": "Che cos'è H2O?",
+        "opzioni": ["Ossigeno", "Idrogeno", "Acqua", "Azoto"],
+        "corretta": "Acqua"
+    },
+    {
+        "domanda": "Qual è l'organo principale del sistema nervoso?",
+        "opzioni": ["Cuore", "Fegato", "Polmone", "Cervello"],
+        "corretta": "Cervello"
+    },
+    {
+        "domanda": "Quante lettere ha l'alfabeto italiano?",
+        "opzioni": ["26", "23", "21", "25"],
+        "corretta": "21"
+    },
+    {
+        "domanda": "Qual è il fiume più lungo del mondo?",
+        "opzioni": ["Nilo", "Yangtze", "Amazzoni", "Mississippi"],
+        "corretta": "Amazzoni"
+    },
+    {
+        "domanda": "Chi ha scritto 'I Promessi Sposi'?",
+        "opzioni": ["Dante", "Manzoni", "Calvino", "Verga"],
+        "corretta": "Manzoni"
+    },
+    {
+        "domanda": "Quale città italiana è famosa per la torre pendente?",
+        "opzioni": ["Roma", "Venezia", "Firenze", "Pisa"],
+        "corretta": "Pisa"
+    },
+    {
+        "domanda": "Qual è la capitale della Spagna?",
+        "opzioni": ["Barcellona", "Madrid", "Valencia", "Siviglia"],
+        "corretta": "Madrid"
+    },
+    {
+        "domanda": "Cosa misura un barometro?",
+        "opzioni": ["Temperatura", "Velocità del vento", "Pressione atmosferica", "Umidità"],
+        "corretta": "Pressione atmosferica"
+    },
+    {
+        "domanda": "Chi ha scoperto la penicillina?",
+        "opzioni": ["Louis Pasteur", "Alexander Fleming", "Marie Curie", "Newton"],
+        "corretta": "Alexander Fleming"
+    },
+    {
+        "domanda": "Qual è la capitale del Canada?",
+        "opzioni": ["Toronto", "Ottawa", "Vancouver", "Montreal"],
+        "corretta": "Ottawa"
+    },
+    {
+        "domanda": "Quale pianeta è noto come il Pianeta Rosso?",
+        "opzioni": ["Giove", "Saturno", "Marte", "Venere"],
+        "corretta": "Marte"
+    },
+    {
+        "domanda": "Chi è l'autore di '1984'?",
+        "opzioni": ["Aldous Huxley", "Ray Bradbury", "George Orwell", "Jules Verne"],
+        "corretta": "George Orwell"
+    },
+    {
+        "domanda": "Come si chiama il processo con cui le piante producono ossigeno?",
+        "opzioni": ["Fermentazione", "Fotosintesi", "Respirazione", "Ossidazione"],
+        "corretta": "Fotosintesi"
+    },
+    {
+        "domanda": "Qual è la capitale della Germania?",
+        "opzioni": ["Monaco", "Francoforte", "Berlino", "Amburgo"],
+        "corretta": "Berlino"
+    },
+    {
+        "domanda": "Chi ha formulato la teoria della relatività?",
+        "opzioni": ["Newton", "Galileo", "Einstein", "Tesla"],
+        "corretta": "Einstein"
+    },
+    {
+        "domanda": "Dove si trova il Colosseo?",
+        "opzioni": ["Atene", "Istanbul", "Milano", "Roma"],
+        "corretta": "Roma"
+    },
+    {
+        "domanda": "Chi fu il primo uomo a camminare sulla Luna?",
+        "opzioni": ["Buzz Aldrin", "Neil Armstrong", "Yuri Gagarin", "Alan Shepard"],
+        "corretta": "Neil Armstrong"
+    },
+    {
+        "domanda": "Cosa si celebra il 25 aprile in Italia?",
+        "opzioni": ["Natale", "Festa della Repubblica", "Liberazione", "Pasqua"],
+        "corretta": "Liberazione"
+    },
+    {
+        "domanda": "Qual è l'elemento chimico con simbolo 'O'?",
+        "opzioni": ["Oro", "Ossigeno", "Osmio", "Oganesson"],
+        "corretta": "Ossigeno"
+    },
+    {
+        "domanda": "Che forma ha la Terra?",
+        "opzioni": ["Cubica", "Sferoidale", "Cilindrica", "Piatta"],
+        "corretta": "Sferoidale"
+    },
+    {
+        "domanda": "Chi era Giulio Cesare?",
+        "opzioni": ["Imperatore greco", "Filosofo tedesco", "Papa", "Generale romano"],
+        "corretta": "Generale romano"
+    },
+    {
+        "domanda": "Qual è il colore primario tra questi?",
+        "opzioni": ["Verde", "Blu", "Viola", "Arancione"],
+        "corretta": "Blu"
+    },
+    {
+        "domanda": "Dove si trova il Monte Fuji?",
+        "opzioni": ["Cina", "Corea", "Thailandia", "Giappone"],
+        "corretta": "Giappone"
+    },
+    {
+        "domanda": "Quanti gradi ha un angolo retto?",
+        "opzioni": ["180", "45", "60", "90"],
+        "corretta": "90"
+    },
+    {
+        "domanda": "Quale città è nota come la Città Eterna?",
+        "opzioni": ["Atene", "Roma", "Gerusalemme", "Cartagine"],
+        "corretta": "Roma"
+    },
+    {
+        "domanda": "Che cos'è un mammifero?",
+        "opzioni": ["Un rettile", "Un uccello", "Un animale che allatta", "Un pesce"],
+        "corretta": "Un animale che allatta"
+    },
+    {
+        "domanda": "Chi fu il primo presidente della Repubblica Italiana?",
+        "opzioni": ["Luigi Einaudi", "Sandro Pertini", "Enrico De Nicola", "Giovanni Leone"],
+        "corretta": "Enrico De Nicola"
+    },
+    {
+        "domanda": "Quante regioni ha l’Italia?",
+        "opzioni": ["18", "21", "19", "20"],
+        "corretta": "20"
+    },
+    {
+        "domanda": "Che animale è simbolo della saggezza?",
+        "opzioni": ["Leone", "Cane", "Aquila", "Gufo"],
+        "corretta": "Gufo"
+    },
+    {
+        "domanda": "Dove si trova il Taj Mahal?",
+        "opzioni": ["Pakistan", "Nepal", "Iran", "India"],
+        "corretta": "India"
+    },
+    {
+        "domanda": "Qual è il gas principale dell’atmosfera terrestre?",
+        "opzioni": ["Ossigeno", "Idrogeno", "Azoto", "Anidride Carbonica"],
+        "corretta": "Azoto"
+    },
+    {
+        "domanda": "Quale forma ha l'orbita terrestre?",
+        "opzioni": ["Circolare", "Parabolica", "Irregolare", "Ellittica"],
+        "corretta": "Ellittica"
+    },
+    {
+        "domanda": "Qual è la lingua ufficiale della Svizzera?",
+        "opzioni": ["Tedesco", "Francese", "Italiano", "Tutte le precedenti"],
+        "corretta": "Tutte le precedenti"
+    }
+]

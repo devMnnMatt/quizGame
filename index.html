@@ -1,0 +1,147 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <meta charset="UTF-8">
+    <title>Quiz Cultura Generale</title>
+    <style>
+        body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        }
+        .quiz-container {
+        background-color: white;
+        padding: 30px;
+        border-radius: 10px;
+        max-width: 600px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        text-align: center;
+        }
+        .option-button {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #eee;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.2s;
+        }
+        .option-button:hover {
+        background-color: #ddd;
+        }
+        #next-button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        border: none;
+        background-color: #28a745;
+        color: white;
+        border-radius: 5px;
+        display: none;
+        cursor: pointer;
+        }
+        #feedback {
+        margin-top: 15px;
+        font-weight: bold;
+        }
+        #score {
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: #555;
+        }
+    </style>
+    </head>
+    <body>
+
+    <div class="quiz-container">
+    <div id="score">Punteggio: 0</div>
+    <h2 id="question">Caricamento domanda...</h2>
+    <div id="options"></div>
+    <p id="feedback"></p>
+    <button id="next-button" onclick="nextQuestion()">Prossima</button>
+    <p>TODO: aggiungere audio in backgound</p>
+    </div>
+    
+
+    <script>
+    let domandeCasuali = [];
+    let domandaCorrente = 0;
+    let punteggio = 0;
+    let rispostaData = false;
+
+    // 🔁 Carica il file JSON esterno
+    fetch('domande.json')
+        .then(response => response.json())
+        .then(data => {
+        domandeCasuali = data.sort(() => Math.random() - 0.5);
+        mostraDomanda();
+        })
+        .catch(error => {
+        document.getElementById("question").textContent = "Errore nel caricamento delle domande.";
+        console.error("Errore nel fetch:", error);
+        });
+
+    function mostraDomanda() {
+        const domanda = domandeCasuali[domandaCorrente];
+        document.getElementById("question").textContent = domanda.domanda;
+
+        const optionsDiv = document.getElementById("options");
+        optionsDiv.innerHTML = "";
+
+        domanda.opzioni.forEach(opzione => {
+        const btn = document.createElement("button");
+        btn.textContent = opzione;
+        btn.className = "option-button";
+        btn.onclick = () => controllaRisposta(opzione);
+        optionsDiv.appendChild(btn);
+        });
+
+        document.getElementById("feedback").textContent = "";
+        document.getElementById("next-button").style.display = "none";
+        rispostaData = false;
+    }
+
+    function controllaRisposta(risposta) {
+        if (rispostaData) return;
+        rispostaData = true;
+
+        const domanda = domandeCasuali[domandaCorrente];
+        const feedback = document.getElementById("feedback");
+
+        if (risposta === domanda.corretta) {
+        feedback.textContent = "✅ Corretto!";
+        feedback.style.color = "green";
+        punteggio++;
+        document.getElementById("score").textContent = `Punteggio: ${punteggio}`;
+        } else {
+        feedback.textContent = `❌ Sbagliato! La risposta corretta era: ${domanda.corretta}`;
+        feedback.style.color = "red";
+        }
+
+        document.querySelectorAll(".option-button").forEach(btn => btn.disabled = true);
+        document.getElementById("next-button").style.display = "inline-block";
+    }
+
+    function nextQuestion() {
+        domandaCorrente++;
+        if (domandaCorrente < domandeCasuali.length) {
+        mostraDomanda();
+        } else {
+        document.querySelector(".quiz-container").innerHTML = `
+            <h2>🎉 Fine del quiz!</h2>
+            <p>Hai totalizzato <strong>${punteggio}</strong> punti su ${domandeCasuali.length}.</p>
+            <p>Ricarica la pagina per giocare di nuovo.</p>
+        `;
+        }
+    }
+    </script>
+
+    
+
+    </body>
+    </html>
