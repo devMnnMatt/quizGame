@@ -54,6 +54,16 @@
         margin-bottom: 10px;
         color: #555;
         }
+        #play-audio, #mute-audio {
+        padding: 8px 12px;
+        margin-right: 5px;
+        background-color: #007bff;
+         color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 14px;
+        }  
     </style>
     </head>
     <body>
@@ -64,9 +74,17 @@
     <div id="options"></div>
     <p id="feedback"></p>
     <button id="next-button" onclick="nextQuestion()">Prossima</button>
-    <p>TODO: aggiungere audio in backgound</p>
     </div>
     
+    <div style="position: absolute; top: 20px; left: 20px;">
+        <button id="play-audio">▶️ Play</button>
+        <button id="mute-audio">🔇 Mute</button>
+    </div>
+
+    <audio id="bg-music" loop>
+        <source src="music.wav" type="audio/wav">
+         Il tuo browser non supporta l'audio HTML5.
+    </audio>
 
     <script>
     let domandeCasuali = [];
@@ -141,6 +159,27 @@
     }
     </script>
 
+    <script>
+        const audio = document.getElementById("bg-music");
+        const playBtn = document.getElementById("play-audio");
+        const muteBtn = document.getElementById("mute-audio");
+
+        let isMuted = false;
+
+        playBtn.addEventListener("click", () => {
+            if (!audio.paused) {
+                audio.pause();
+            } else {
+                audio.play();
+            }
+        });
+
+        muteBtn.addEventListener("click", () => {
+            isMuted = !isMuted;
+            audio.muted = isMuted;
+            muteBtn.textContent = isMuted ? "🔈 Unmute" : "🔇 Mute";
+        });
+    </script>
     
 
     </body>
